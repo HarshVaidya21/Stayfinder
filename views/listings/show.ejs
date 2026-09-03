@@ -1,0 +1,46 @@
+<% layout("/layouts/boilerplate") %>
+
+    <body>
+        <h5>elaborated</h5>
+
+        <p>
+            <%=alldetails.title%>
+        </p>
+        <p>
+            <%=alldetails.description%>
+        </p>
+        <p>
+            <%=alldetails.price%>
+        </p>
+        <p>
+            <%=alldetails.location%>
+        </p>
+
+
+        <p>
+            <%=alldetails.country%>
+        </p>
+
+        <a href="/listings/<%=alldetails._id%>/edit">edit your listing</a><br><br>
+        <form method="POST" action="/listings/<%=alldetails._id%>?_method=DELETE">
+            <button>delete</button>
+        </form>
+        <hr>
+        <div>
+            <h4>leave a review</h4>
+            <form action="">
+                <div>
+                    <label for="rating">Rating</label>
+                    <input type="range" min="1 max=5" id="rating" name="review[rating]">
+                </div>
+                <div>
+                    <label for="comment">Comments</label>
+                    <textarea name="review[comment]" id="comment" cols="20" rows="10"></textarea>
+                </div>
+                <button class="btn btn-outline-dark">Submit</button>
+            </form>
+        </div>
+
+
+
+    </body>

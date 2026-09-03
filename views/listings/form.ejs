@@ -1,0 +1,40 @@
+<% layout("/layouts/boilerplate") %>
+
+    <body>
+        <form method="POST" action="/listings" class="needs-validation" novalidate>
+            <div class="mb-3">
+                <label for="title">Title</label>
+                <textarea name="listing[title]" placeholder="enter title" class="form-control" required></textarea>
+                <div class="valid-feedback">title looks good!</div>
+            </div>
+            <div class="mb-3">
+                <label for="desc">Description</label>
+                <textarea name="listing[description]" placeholder="desc" class="form-control" required></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="price">Price</label>
+                <textarea name="listing[price]" placeholder="enter price" class="form-control" required></textarea>
+                <div class="invalid-feedback">pls enter a valid price</div>
+            </div>
+            <div class="mb-3">
+                <label for="img">Image</label>
+                <textarea name="listing[image]" placeholder="put image" class="form-control"></textarea>
+
+            </div>
+            <div class="mb-3">
+                <label for="location">Location</label>
+                <textarea name="listing[location]" placeholder="enter location" class="form-control"
+                    required></textarea>
+
+            </div>
+            <div class="mb-3">
+                <label for="country">Country</label>
+                <textarea name="listing[country]" placeholder="enter country" class="form-control" required></textarea>
+            </div>
+            <button class="btn btn-dark">Submit</button>
+        </form>
+
+
+    </body>
+
+    </html>

@@ -1,0 +1,74 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+
+.navbar {
+    height: 5rem;
+    background-color: #fff;
+}
+
+.fa-solid {
+    color: rgb(187, 11, 11);
+    font-size: 2rem;
+}
+
+.container {
+    flex: 1;
+}
+
+.f-container {
+
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: grey;
+    color: black;
+
+}
+
+.fcontent a {
+    text-align: center;
+    margin-right: 5 rem;
+    text-decoration: none;
+    color: #222222;
+}
+
+.fcontent a:hover {
+    text-decoration: underline
+}
+
+.ficons {
+    width: 100%;
+
+}
+
+.fcontent {
+    width: 100%;
+}
+
+.card {
+    border: none !important;
+}
+
+.card-img-top {
+
+    width: 100% !important;
+    margin-right: 5rem;
+    object-fit: cover !important;
+}
+
+.card col {
+    border-radius: 0.5rem;
+
+}
+
+.card-body {
+    padding: 0 !important;
+}
